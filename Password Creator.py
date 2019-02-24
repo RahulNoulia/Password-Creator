@@ -14,7 +14,6 @@ def creating_pass():
 		return password
 
 	elif var.get() == 2:
-
 		password = ''.join([random.choice(string.ascii_uppercase + string.digits) for i in range(length)])
 		return password
 
@@ -22,7 +21,7 @@ def creating_pass():
 		password = ''.join([random.choice(string.ascii_lowercase + string.ascii_uppercase + string.digits + special) for n in range(length)])
 		return password
 	else:
-		print("Please choose an option")
+		pass
 
 
 #  generation of password
